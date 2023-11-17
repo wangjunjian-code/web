@@ -1,2 +1,2 @@
-# web (html&css&javascript)
-web basics learning.
+# web basics 
+web basics (html & css & javascript) learning.
