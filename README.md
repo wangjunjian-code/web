@@ -1,2 +1,2 @@
-# WEB (HTML & CSS & JAVASCRIPT)
-My web basics learning Path.
+# web (html&css&javascript)
+web basics learning.
