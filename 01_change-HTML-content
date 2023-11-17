@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="demo">Text</h1>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Text changed!"'>I'm a button</button>
+
+</body>
+</html>
