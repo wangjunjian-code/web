@@ -29,6 +29,18 @@
         justify-content: center;
         flex-direction: column;
       }
+      .two-cols {
+        display: flex;
+        justify-content: center;
+      }
+
+      .col {
+        margin: 2dvh;
+      }
+
+      h2 {
+        margin: 1dvh 0;
+      }
 
       a {
         color: rgb(50, 50, 50);
@@ -42,7 +54,18 @@
   </head>
   <body>
     <div class="vertical-center">
-      <a href="01_change-HTML-content.html">01 change HTML content</a>
+      <div class="two-cols">
+        <div class="col">
+          <h2>html&css:</h2>
+          <a href="./html&css/01_page_refreshes_and_redirect"
+            >01 page refreshes and redirect</a
+          >
+        </div>
+        <div class="col">
+          <h2>js:</h2>
+          <a href="./js/01_change-HTML-content">01 change HTML content</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
