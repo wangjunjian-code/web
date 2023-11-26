@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-size: 50px;
+        font-family: Helvetica;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+        transition: background-color 2s ease-in-out;
+      }
+
+      .container > div {
+        display: block;
+        height: 2rem;
+        width: 12rem;
+        font-size: 2rem;
+        overflow: hidden;
+      }
+
+      .container > div > span {
+        display: block;
+        height: 2rem;
+        font-weight: bold;
+        letter-spacing: -0.15rem;
+        text-align: center;
+        transition: 0.3s;
+
+        background: linear-gradient(45deg, #ff8a00, #e52e71);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .container:hover > div > span {
+        transform: translateY(-100%);
+        color: rgb(255, 255, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <span> MERRY</span>
+        <span>HAPPY</span>
+      </div>
+      <div>
+        <span>CHRISTMAS</span>
+        <span>NEW YEAR</span>
+      </div>
+      <div>
+        <span>2023</span>
+        <span>2024</span>
+      </div>
+    </div>
+    <script>
+      const container = document.querySelector(".container");
+      const body = document.body;
+
+      container.addEventListener("mouseover", () => {
+        body.style.background = "linear-gradient(45deg, #ff8a00, #e52e71)";
+      });
+
+      container.addEventListener("mouseout", () => {
+        body.style.background = "";
+      });
+    </script>
+  </body>
+</html>
