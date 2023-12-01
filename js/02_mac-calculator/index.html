@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        font-size: 80px;
+        font-family: helvetica;
+        font-weight: lighter;
+        color: white;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .calculator {
+        background-color: #373738;
+        width: 400px;
+        height: 600px;
+        border: 0.5px solid rgb(130, 130, 130);
+        border-radius: 20px;
+        box-shadow: 4px 4px 30px 2px rgba(0, 0, 0, 0.2);
+      }
+      .result-box {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        height: 25%;
+        padding: 20px;
+      }
+      .buttons {
+        height: 75%;
+      }
+      .rows {
+        display: flex;
+        justify-content: end;
+        height: 19.1%;
+      }
+      #special-buttons {
+        background-color: #4b4b4c;
+        border: 0.8px solid #373738;
+        color: white;
+        width: 25%;
+        font-size: 25px;
+      }
+      #numbers {
+        background-color: #686869;
+        border: 0.8px solid #373738;
+        color: white;
+        width: 25%;
+        font-size: 25px;
+      }
+      #calcular-buttons {
+        background-color: #ffab3d;
+        border: 0.8px solid #373738;
+        color: white;
+        width: 25%;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="result-box">0</div>
+      <div class="buttons">
+        <div class="rows">
+          <button id="special-buttons">AC</button>
+          <button id="special-buttons">+/-</button>
+          <button id="special-buttons">%</button>
+          <button id="calcular-buttons">÷</button>
+        </div>
+
+        <div class="rows">
+          <button id="numbers">7</button>
+          <button id="numbers">8</button>
+          <button id="numbers">9</button>
+          <button id="calcular-buttons">×</button>
+        </div>
+
+        <div class="rows">
+          <button id="numbers">4</button>
+          <button id="numbers">5</button>
+          <button id="numbers">6</button>
+          <button id="calcular-buttons">-</button>
+        </div>
+
+        <div class="rows">
+          <button id="numbers">1</button>
+          <button id="numbers">2</button>
+          <button id="numbers">3</button>
+          <button id="calcular-buttons">+</button>
+        </div>
+
+        <div class="rows">
+          <button id="numbers" style="width: 50%; border-radius: 0 0 0 20px">
+            0
+          </button>
+          <button id="numbers">,</button>
+          <button id="calcular-buttons" style="border-radius: 0 0 20px 0">
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
